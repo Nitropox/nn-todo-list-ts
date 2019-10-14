@@ -20,7 +20,7 @@ export interface MakeTaskDoneAction {
 export const addTask = (dispatch: Dispatch<AddTaskAction>) => (
   date: number,
   title: string,
-  callback: Function
+  callback?: Function
 ) => {
   dispatch({
     type: ActionTypes.addTask,

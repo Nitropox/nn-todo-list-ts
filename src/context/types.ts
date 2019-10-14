@@ -5,10 +5,6 @@ export interface Task {
   checked: boolean;
 }
 
-export interface TaskState {
-  tasks: Task[];
-}
-
 export enum ActionTypes {
   addTask,
   removeTask,
