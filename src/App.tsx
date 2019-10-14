@@ -17,7 +17,7 @@ const App: React.FC = () => {
               <h5 className="my-3">Todo List</h5>
             </div>
           </header>
-          <ProgressBar />
+          <ProgressBar progress="33.33%" />
           <div className="col border rounded py-4">
             <TodoInput />
             <Tabs />
