@@ -1,6 +1,6 @@
 import createDataContext from "./createDataContext";
 import { ActionTypes, Task, Action } from "./types";
-
+import { addTask, removeTask, makeTaskDone } from "./actions";
 const todosReducer = (state: Task[], action: Action) => {
   switch (action.type) {
     case ActionTypes.addTask:
@@ -21,9 +21,9 @@ const todosReducer = (state: Task[], action: Action) => {
 export const { Context, Provider } = createDataContext(
   todosReducer,
   {
-    addTask: ActionTypes.addTask,
-    makeTaskDone: ActionTypes.makeTaskDone,
-    removeTask: ActionTypes.removeTask
+    addTask,
+    removeTask,
+    makeTaskDone
   },
   [
     {

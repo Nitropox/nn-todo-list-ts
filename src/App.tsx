@@ -4,6 +4,8 @@ import { ProgressBar } from "./components/ProgressBar";
 import { TodoInput } from "./components/TodoInput";
 import { TodoList } from "./components/TodoList";
 import { Tabs } from "./components/Tabs";
+import { Provider as TodosProvider } from "./context/tasksReducer";
+import { Context as TodosContext } from "./context/tasksReducer";
 
 const App: React.FC = () => {
   return (
@@ -27,4 +29,10 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default () => {
+  return (
+    <TodosProvider>
+      <App />
+    </TodosProvider>
+  );
+};
