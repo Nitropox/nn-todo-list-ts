@@ -28,17 +28,17 @@ export const { Context, Provider } = createDataContext(
   [
     {
       date: 1570897439971,
-      title: "Wykonać zadanie rekrutacyjne dla NN",
+      title: "Task 3",
       checked: false
     },
     {
       date: 1570897439972,
-      title: "Sprawdzić moliwości w świecie JS",
+      title: "Task 2",
       checked: false
     },
     {
       date: 1570897439973,
-      title: "Ukończyć kurs React Hooks",
+      title: "Task 1",
       checked: true
     }
   ]

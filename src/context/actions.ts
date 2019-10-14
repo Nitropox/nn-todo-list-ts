@@ -16,6 +16,7 @@ export interface MakeTaskDoneAction {
   type: ActionTypes.makeTaskDone;
   payload: number;
 }
+
 export const addTask = (dispatch: Dispatch<AddTaskAction>) => (
   date: number,
   title: string,
