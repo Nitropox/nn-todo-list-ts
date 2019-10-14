@@ -22,7 +22,7 @@ export const SingleTask: React.FC<SingleTaskProps> = ({ item }) => {
               <input
                 className="form-check-input"
                 type="checkbox"
-                defaultChecked={item.checked ? true : false}
+                defaultChecked={item.checked}
                 onChange={() => {
                   makeTaskDone(item.date);
                 }}
