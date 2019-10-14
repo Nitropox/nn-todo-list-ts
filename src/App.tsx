@@ -19,7 +19,6 @@ const App: React.FC = () => {
           <div className="col border rounded py-4">
             <TodoInput />
             <Tabs />
-
             <TodoList />
           </div>
         </main>
