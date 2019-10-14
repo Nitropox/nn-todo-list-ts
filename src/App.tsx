@@ -29,7 +29,7 @@ const App: React.FC = () => {
     }
   };
 
-  const progress = () => {
+  const progress = (): string => {
     return (
       (
         (100 * state.filter((task: Task) => task.checked).length) /
