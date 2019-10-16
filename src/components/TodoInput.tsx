@@ -7,8 +7,8 @@ export const TodoInput = () => {
   const { addTask } = useContext(TodosContext);
 
   const submitHandler = (event: any): void => {
+    event.preventDefault();
     if (!event.target.checkValidity()) {
-      event.preventDefault();
       setIsValid(false);
     } else {
       setIsValid(true);
